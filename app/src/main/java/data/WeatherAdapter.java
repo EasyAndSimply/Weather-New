@@ -9,16 +9,10 @@ import retrofit.RxJavaCallAdapterFactory;
 
 import rx.Observable;
 
-
-
 public class WeatherAdapter {
-
-
 
     private static WeatherAdapter instance;
     private WeatherAPI weatherAPI;
-
-
 
     private WeatherAdapter() {
 
@@ -28,23 +22,14 @@ public class WeatherAdapter {
                 .baseUrl(WeatherAPI.BASE_URL)
                 .build();
 
-
-
         weatherAPI = retrofit.create(WeatherAPI.class);
-
     }
-
-
-
     public static WeatherAdapter getInstance() {
 
         if (instance == null) {
             instance = new WeatherAdapter();
-
         }
-
         return instance;
-
     }
 
 

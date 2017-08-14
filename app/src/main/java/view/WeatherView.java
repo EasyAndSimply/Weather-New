@@ -11,10 +11,8 @@ import model.WeatherInfo;
 
 
 public interface WeatherView extends MvpView {
-
-void showLoading();
+ void showLoading();
 void hideLoading();
  void showError(String error);
-
-void onWeatherObtained(WeatherInfo w);
+ void onWeatherObtained(WeatherInfo w);
 }
