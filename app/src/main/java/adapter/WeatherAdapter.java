@@ -25,15 +25,10 @@ public class WeatherAdapter {
 
 
     private WeatherAdapter() {
-
         Retrofit retrofit = new Retrofit.Builder()
-
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-
                 .addConverterFactory(GsonConverterFactory.create())
-
                 .baseUrl(WeatherAPI.BASE_URL)
-
                 .build();
 
 
@@ -47,9 +42,7 @@ public class WeatherAdapter {
     public static WeatherAdapter getInstance() {
 
         if (instance == null) {
-
             instance = new WeatherAdapter();
-
         }
 
         return instance;
@@ -59,7 +52,6 @@ public class WeatherAdapter {
 
 
     public Observable<WeatherInfo> getCurrentWeather(double lat, double lon) {
-
         return weatherAPI.getCurrentWeather(lat, lon, WeatherAPI.UNITS_METRIC, WeatherAPI.API_KEY);
 
     }

@@ -19,36 +19,10 @@ public class Coord {
     @Expose
 
     private Double lat;
-
-
-
-    /**
-
-     *
-
-     * @return
-
-     *     The lon
-
-     */
-
     public Double getLon() {
-
         return lon;
 
     }
-
-
-
-    /**
-
-     *
-
-     * @param lon
-
-     *     The lon
-
-     */
 
     public void setLon(Double lon) {
 
@@ -56,35 +30,11 @@ public class Coord {
 
     }
 
-
-
-    /**
-
-     *
-
-     * @return
-
-     *     The lat
-
-     */
-
     public Double getLat() {
 
         return lat;
 
     }
-
-
-
-    /**
-
-     *
-
-     * @param lat
-
-     *     The lat
-
-     */
 
     public void setLat(Double lat) {
 

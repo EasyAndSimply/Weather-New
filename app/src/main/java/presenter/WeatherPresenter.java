@@ -21,23 +21,15 @@ public class WeatherPresenter extends MvpBasePresenter<WeatherView> {
 
 
     public void doObtainWeather(double lat, double lon) {
-
         if (getView() == null) {
-
             return;
-
         }
 
 
 
         getView().showLoading();
-
-
-
         WeatherAdapter.getInstance().getCurrentWeather(lat, lon)
-
                 .observeOn(AndroidSchedulers.mainThread())
-
                 .subscribe(new Subscriber<WeatherInfo>() {
 
                     @Override
@@ -51,7 +43,6 @@ public class WeatherPresenter extends MvpBasePresenter<WeatherView> {
                     @Override
 
                     public void onError(Throwable e) {
-
                         getView().showError(e.getMessage());
 
                     }
@@ -61,7 +52,6 @@ public class WeatherPresenter extends MvpBasePresenter<WeatherView> {
                     @Override
 
                     public void onNext(WeatherInfo weather) {
-
                         getView().onWeatherObtained(weather);
 
                     }

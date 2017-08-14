@@ -14,7 +14,6 @@ public interface WeatherView extends MvpView {
 
 void showLoading();
 void hideLoading();
-
  void showError(String error);
 
 void onWeatherObtained(WeatherInfo w);

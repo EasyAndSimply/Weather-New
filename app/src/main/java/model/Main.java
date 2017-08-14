@@ -40,34 +40,12 @@ public class Main {
     private Double tempMax;
 
 
-
-    /**
-
-     *
-
-     * @return
-
-     *     The temp
-
-     */
-
     public Double getTemp() {
 
         return temp;
 
     }
 
-
-
-    /**
-
-     *
-
-     * @param temp
-
-     *     The temp
-
-     */
 
     public void setTemp(Double temp) {
 
@@ -76,34 +54,11 @@ public class Main {
     }
 
 
-
-    /**
-
-     *
-
-     * @return
-
-     *     The pressure
-
-     */
-
     public Double getPressure() {
 
         return pressure;
 
     }
-
-
-
-    /**
-
-     *
-
-     * @param pressure
-
-     *     The pressure
-
-     */
 
     public void setPressure(Double pressure) {
 
@@ -112,34 +67,12 @@ public class Main {
     }
 
 
-
-    /**
-
-     *
-
-     * @return
-
-     *     The humidity
-
-     */
-
     public Double getHumidity() {
 
         return humidity;
 
     }
 
-
-
-    /**
-
-     *
-
-     * @param humidity
-
-     *     The humidity
-
-     */
 
     public void setHumidity(Double humidity) {
 
@@ -149,16 +82,6 @@ public class Main {
 
 
 
-    /**
-
-     *
-
-     * @return
-
-     *     The tempMin
-
-     */
-
     public Double getTempMin() {
 
         return tempMin;
@@ -167,16 +90,6 @@ public class Main {
 
 
 
-    /**
-
-     *
-
-     * @param tempMin
-
-     *     The temp_min
-
-     */
-
     public void setTempMin(Double tempMin) {
 
         this.tempMin = tempMin;
@@ -184,34 +97,12 @@ public class Main {
     }
 
 
-
-    /**
-
-     *
-
-     * @return
-
-     *     The tempMax
-
-     */
-
     public Double getTempMax() {
 
         return tempMax;
 
     }
 
-
-
-    /**
-
-     *
-
-     * @param tempMax
-
-     *     The temp_max
-
-     */
 
     public void setTempMax(Double tempMax) {
 

@@ -46,33 +46,12 @@ public class Sys {
 
 
 
-    /**
-
-     *
-
-     * @return
-
-     *     The type
-
-     */
-
     public Integer getType() {
 
         return type;
 
     }
 
-
-
-    /**
-
-     *
-
-     * @param type
-
-     *     The type
-
-     */
 
     public void setType(Integer type) {
 
@@ -82,16 +61,6 @@ public class Sys {
 
 
 
-    /**
-
-     *
-
-     * @return
-
-     *     The id
-
-     */
-
     public Integer getId() {
 
         return id;
@@ -99,34 +68,12 @@ public class Sys {
     }
 
 
-
-    /**
-
-     *
-
-     * @param id
-
-     *     The id
-
-     */
-
     public void setId(Integer id) {
 
         this.id = id;
 
     }
 
-
-
-    /**
-
-     *
-
-     * @return
-
-     *     The message
-
-     */
 
     public Double getMessage() {
 
@@ -136,33 +83,12 @@ public class Sys {
 
 
 
-    /**
-
-     *
-
-     * @param message
-
-     *     The message
-
-     */
-
     public void setMessage(Double message) {
 
         this.message = message;
 
     }
 
-
-
-    /**
-
-     *
-
-     * @return
-
-     *     The country
-
-     */
 
     public String getCountry() {
 
@@ -171,34 +97,12 @@ public class Sys {
     }
 
 
-
-    /**
-
-     *
-
-     * @param country
-
-     *     The country
-
-     */
-
     public void setCountry(String country) {
 
         this.country = country;
 
     }
 
-
-
-    /**
-
-     *
-
-     * @return
-
-     *     The sunrise
-
-     */
 
     public Integer getSunrise() {
 
@@ -208,16 +112,6 @@ public class Sys {
 
 
 
-    /**
-
-     *
-
-     * @param sunrise
-
-     *     The sunrise
-
-     */
-
     public void setSunrise(Integer sunrise) {
 
         this.sunrise = sunrise;
@@ -225,34 +119,12 @@ public class Sys {
     }
 
 
-
-    /**
-
-     *
-
-     * @return
-
-     *     The sunset
-
-     */
-
     public Integer getSunset() {
 
         return sunset;
 
     }
 
-
-
-    /**
-
-     *
-
-     * @param sunset
-
-     *     The sunset
-
-     */
 
     public void setSunset(Integer sunset) {
 

@@ -4,9 +4,7 @@ package data;
 import Util.WeatherAPI;
 import model.WeatherInfo;
 import retrofit.GsonConverterFactory;
-
 import retrofit.Retrofit;
-
 import retrofit.RxJavaCallAdapterFactory;
 
 import rx.Observable;
@@ -18,9 +16,6 @@ public class WeatherAdapter {
 
 
     private static WeatherAdapter instance;
-
-
-
     private WeatherAPI weatherAPI;
 
 
@@ -28,13 +23,9 @@ public class WeatherAdapter {
     private WeatherAdapter() {
 
         Retrofit retrofit = new Retrofit.Builder()
-
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-
                 .addConverterFactory(GsonConverterFactory.create())
-
                 .baseUrl(WeatherAPI.BASE_URL)
-
                 .build();
 
 
@@ -48,7 +39,6 @@ public class WeatherAdapter {
     public static WeatherAdapter getInstance() {
 
         if (instance == null) {
-
             instance = new WeatherAdapter();
 
         }
@@ -59,10 +49,10 @@ public class WeatherAdapter {
 
 
 
-    public Observable<WeatherInfo> getCurrentWeather(double lat, double lon) {
+   // public Observable<WeatherInfo> getCurrentWeather(double lat, double lon) {
 
-        return weatherAPI.getCurrentWeather(lat, lon, WeatherAPI.UNITS_METRIC, WeatherAPI.API_KEY);
+        //return weatherAPI.getCurrentWeather(lat, lon, WeatherAPI.UNITS_METRIC, WeatherAPI.API_KEY);
 
-    }
+   // }
 
 }
