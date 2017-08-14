@@ -17,9 +17,6 @@ public class WeatherAdapter {
 
 
     private static WeatherAdapter instance;
-
-
-
     private WeatherAPI weatherAPI;
 
 
